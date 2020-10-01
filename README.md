@@ -2,5 +2,5 @@
 API used: https://github.com/sirAMPR/ghostpost_backend
 
 ## Installation
-`npm install`
-`npm start`
+1. `npm install`
+2. `npm start`
