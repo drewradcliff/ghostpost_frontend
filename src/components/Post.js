@@ -7,9 +7,9 @@ export default function Post({ post }) {
   return (
     <div className="post">
       <div className="score-div">
-        <button>⬆</button>
+        <button>⬆️</button>
         <div className="score">{post.score}</div>
-        <button>⬇</button>
+        <button>⬇️</button>
       </div>
       <div>
         <ul>
