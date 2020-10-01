@@ -1,0 +1,17 @@
+.post {
+  margin: 0 auto;
+  width: 24rem;
+  border: solid black 1px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.score-div {
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.score {
+  text-align: center;
+}
