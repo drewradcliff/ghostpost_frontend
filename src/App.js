@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar"
+import CreatePost from "./components/CreatePost"
 
 export default function App() {
   return (
@@ -10,7 +11,7 @@ export default function App() {
         <Navbar />
         <Switch>
           <Route path="/top">
-            <h1>Top</h1>
+            <Home endpoint="/top" />
           </Route>
           <Route path="/boasts">
             <Home endpoint="/boasts" />
@@ -19,7 +20,7 @@ export default function App() {
             <Home endpoint="/roasts" />
           </Route>
           <Route path="/post">
-            <h1>Submit Post</h1>
+            <CreatePost />
           </Route>
           <Route path="/">
             <Home endpoint="/" />

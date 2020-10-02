@@ -19,7 +19,7 @@ export default function Navbar() {
           <Link to="/roasts">Roasts</Link>
         </li>
         <li className="nav-list-item">
-          <Link to="/post">Submit Posts</Link>
+          <Link to="/post">Create Posts</Link>
         </li>
       </ul>
     </nav>

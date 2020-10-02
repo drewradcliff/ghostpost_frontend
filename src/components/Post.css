@@ -30,7 +30,7 @@
   text-align: center;
 }
 
-button {
+.post-button {
   border: none;
   background-color: transparent;
   font-size: inherit;
