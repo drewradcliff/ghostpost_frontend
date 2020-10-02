@@ -1,9 +1,23 @@
-.post {
+.post-roast {
+  background-color: palevioletred;
   margin: 0 auto;
   width: 24rem;
   border: solid black 1px;
   border-radius: 5px;
   display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post-boast {
+  background-color: lightgreen;
+  margin: 0 auto;
+  width: 24rem;
+  border: solid black 1px;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .score-div {
