@@ -12,9 +12,8 @@ export default function CreatePost() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({"is_boast": isBoast, "post_text": postText})
-    })
-    .catch((error) => {
+      body: JSON.stringify({ is_boast: isBoast, post_text: postText }),
+    }).catch((error) => {
       console.error("Error:", error);
     });
   }
@@ -38,7 +37,9 @@ export default function CreatePost() {
       ></input>
       <label htmlFor="text">Post Text:</label>
       <input onChange={handleChange} id="text" defaultValue={postText}></input>
-      <button className="form-button" type="submit">Submit</button>
+      <button className="form-button" type="submit">
+        Submit
+      </button>
     </form>
   );
 }
