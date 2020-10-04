@@ -18,6 +18,19 @@ export default function Post({ post }) {
       });
   }
 
+  function handleDownvote(post) {
+    fetch(`http://localhost:8000/api/posts/${post.id}/add_downvote/`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then(setPostScore(postScore - 1))
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }
+
   return (
     <div className={post.is_boast ? "post-boast" : "post-roast"}>
       <div className="score-div">
@@ -27,7 +40,7 @@ export default function Post({ post }) {
           </span>
         </button>
         <div className="score">{postScore}</div>
-        <button className="post-button">
+        <button className="post-button" onClick={(e) => handleDownvote(post)}>
           <span role="img" aria-label="downvote">
             ⬇️
           </span>
